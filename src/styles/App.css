@@ -1,0 +1,15 @@
+#content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#info-input {
+    display: flex;
+    flex-direction: column;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+}
