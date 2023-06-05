@@ -1,11 +1,11 @@
 import React from "react";
 
 class EducationalInfoInput extends React.Component {
-    constructor(props) {
+    constructor(props) { 
         super(props);
     }
 
-    handleEdit = (e, name, index) => {
+    handleEdit = (name, e, index) => {
         this.props.onEditEducational(name, e.target.value, index);
     }
 
@@ -13,16 +13,21 @@ class EducationalInfoInput extends React.Component {
         return (
             <div>
                 <h1>Education</h1>
+                <div id="education-forms-wrapper">
                 {this.props.educations.map(education => {
                     return (
-                        <form>
-                            <input name='school' onChange={(e) => this.handleEdit(e, 'school', education.index)} placeholder="School" />
-                            <input name='title' onChange={(e) => this.handleEdit(e, 'title', education.index)} placeholder="Title" />
-                            <input name='studyDate' onChange={(e) => this.handleEdit(e, 'studyDate', education.index)} placeholder="Study date" />
-                        </form>
+                        <>
+                            <form class="education-form">
+                                <input name='title' onChange={(e) => this.handleEdit('title', e, education.index)} placeholder="Title" />
+                                <input name='school' onChange={(e) => this.handleEdit('school', e, education.index)} placeholder="School" />
+                                <input name='from' onChange={(e) => this.handleEdit('from', e, education.index)} placeholder="From" />
+                                <input name='until' onChange={(e) => this.handleEdit('until', e, education.index)} placeholder="Until" />
+                            </form>
+                        </>
                     )
                 })}
                 <button onClick={this.props.onAddEducational}>Add</button>
+                </div>
             </div>
         );
     }
