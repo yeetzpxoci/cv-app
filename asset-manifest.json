@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/cv-app/static/css/main.de7b0b98.css",
+    "main.js": "/cv-app/static/js/main.0052c447.js",
+    "static/js/703.0ca703fa.chunk.js": "/cv-app/static/js/703.0ca703fa.chunk.js",
+    "static/js/56.4673c10f.chunk.js": "/cv-app/static/js/56.4673c10f.chunk.js",
+    "static/media/background.jpg": "/cv-app/static/media/background.335dd20152ed23ebdf45.jpg",
+    "index.html": "/cv-app/index.html",
+    "main.de7b0b98.css.map": "/cv-app/static/css/main.de7b0b98.css.map",
+    "main.0052c447.js.map": "/cv-app/static/js/main.0052c447.js.map",
+    "703.0ca703fa.chunk.js.map": "/cv-app/static/js/703.0ca703fa.chunk.js.map",
+    "56.4673c10f.chunk.js.map": "/cv-app/static/js/56.4673c10f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de7b0b98.css",
+    "static/js/main.0052c447.js"
+  ]
+}
