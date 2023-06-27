@@ -18,10 +18,10 @@ class EducationalInfoInput extends React.Component {
                     return (
                         <>
                             <form class="education-form">
-                                <input name='title' onChange={(e) => this.handleEdit('title', e, education.index)} placeholder="Title" />
-                                <input name='school' onChange={(e) => this.handleEdit('school', e, education.index)} placeholder="School" />
-                                <input name='from' onChange={(e) => this.handleEdit('from', e, education.index)} placeholder="From" />
-                                <input name='until' onChange={(e) => this.handleEdit('until', e, education.index)} placeholder="Until" />
+                                <input name='title' onChange={(e) => this.handleEdit('title', e, education.index)} placeholder="Title" value={education.title}/>
+                                <input name='school' onChange={(e) => this.handleEdit('school', e, education.index)} placeholder="School" value={education.school}/>
+                                <input name='from' onChange={(e) => this.handleEdit('from', e, education.index)} placeholder="From" value={education.from} />
+                                <input name='until' onChange={(e) => this.handleEdit('until', e, education.index)} placeholder="Until" value={education.until} />
                             </form>
                         </>
                     )

@@ -13,13 +13,13 @@ class App extends Component {
     super(props);
 
     this.state = {
-      name: '-',
-      email: '-',
-      phoneNo: '-',
+      name: '',
+      email: '',
+      phoneNo: '',
       
       education: {
-        title: '-',
-        school: '-',
+        title: '',
+        school: '',
         from: '',
         until: '',
         index: 0
@@ -27,8 +27,8 @@ class App extends Component {
       educations: [],
 
       experience: {
-        company: '-',
-        position: '-',
+        company: '',
+        position: '',
         from: '',
         until: '',
         index: 0
@@ -117,19 +117,19 @@ class App extends Component {
 
   resetCV() {
     this.setState({
-      name: "-",
-      email: "-",
-      phoneNo: "-",
+      name: '',
+      email: '',
+      phoneNo: '',
       educations: [{
-        title: '-',
-        school: '-',
+        title: '',
+        school: '',
         from: '',
         until: '',
         index: 0
       }],
       experiences: [{
-        company: '-',
-        position: '-',
+        company: '',
+        position: '',
         from: '',
         until: '',
         index: 0
@@ -162,7 +162,7 @@ class App extends Component {
       <div id="content">
         <div id={this.state.infoInputToggled ? "info-input-on" : "info-input-off"}>
           <h2>CVMK</h2>
-          <MainInfoInput onEditMain={this.onEditMain} />
+          <MainInfoInput name={this.state.name} email={this.state.email} phoneNo={this.state.phoneNo} onEditMain={this.onEditMain} />
 
           <EducationalInfoInput educations={this.state.educations} onEditEducational={this.onEditEducational} onAddEducational={this.onAddEducational} />
 

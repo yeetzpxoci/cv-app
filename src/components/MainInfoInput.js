@@ -16,9 +16,9 @@ class MainInfoInput extends React.Component {
             <h1>Main Information</h1>
             <div>
               <form id="main-form">
-                <input name='name' onChange={(e) => this.handleEdit(e, 'name')} placeholder="Name"/>
-                <input name='email' onChange={(e) => this.handleEdit(e, 'email')} placeholder="Email" />
-                <input name='phoneNo' onChange={(e) => this.handleEdit(e, 'phoneNo')} placeholder="Phone number" />
+                <input name='name' onChange={(e) => this.handleEdit(e, 'name')} placeholder="Name" value={this.props.name} />
+                <input name='email' onChange={(e) => this.handleEdit(e, 'email')} placeholder="Email" value={this.props.email} />
+                <input name='phoneNo' onChange={(e) => this.handleEdit(e, 'phoneNo')} placeholder="Phone number" value={this.props.phoneNo} />
               </form>
             </div>
           </div>
